@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-button routerLink="">Home</button>
+    <button mat-button routerLink="/customers">Customers</button>
+    <button mat-button routerLink="/orders">Orders</button>
+    <span class="spacer"></span>
+    <h1>
+      {{title}}
+    </h1>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div fxLayout fxLayoutAlign="center center">
+  <router-outlet></router-outlet>
+</div>
